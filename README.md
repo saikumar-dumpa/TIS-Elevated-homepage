@@ -51,6 +51,7 @@ A modern, animated redesign of the Tulas International School homepage focused o
 
 ## 📁 Project Structure
 
+```
 src/
 ├── App.jsx                  # Homepage assembly
 ├── main.jsx                 # React application entry point
@@ -78,3 +79,5 @@ src/
 ├── vite.config.js          # Vite configuration
 ├── index.html              # Root HTML entry
 └── README.md               # Project documentation
+
+```
