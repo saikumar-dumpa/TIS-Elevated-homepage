@@ -103,6 +103,10 @@ src/
 
 
 ---
-**Developed by Saikumar Dumpa**
-🔗 Live: https://tis-elevated-homepage.vercel.app/
-🔗 GitHub: https://github.com/saikumar-dumpa/TIS-Elevated-homepage
+### 👨‍💻 Developed by Saikumar Dumpa
+
+**🔴 Live Demo:**
+https://tis-elevated-homepage.vercel.app/
+
+**💻 GitHub Repository:**
+https://github.com/saikumar-dumpa/TIS-Elevated-homepage
