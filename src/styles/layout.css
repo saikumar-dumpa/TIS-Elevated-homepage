@@ -1,0 +1,54 @@
+/* Header, navigation, footer, and mobile contact styles. */
+
+/* Keep the school identity and navigation visible while the page scrolls. */
+.site-header { position: sticky; z-index: 40; top: 0; height: 78px; border-bottom: 1px solid var(--line); background: var(--paper); transition: background-color 220ms ease, border-color 220ms ease; }
+.header-inner { height: 100%; }
+.wordmark { display: inline-flex; flex-direction: column; width: max-content; line-height: 1; }
+.wordmark-name { color: var(--brand); font-family: "Fraunces", Georgia, serif; font-size: 28px; font-weight: 600; line-height: 0.96; }
+.wordmark-subtitle { margin-top: 5px; color: var(--ink); font-size: 8px; font-weight: 700; line-height: 1; }
+.desktop-nav, .header-actions { display: flex; align-items: center; }
+.desktop-nav { gap: 34px; margin: 0 34px 0 auto; }
+.nav-link { color: var(--muted); font-size: 13px; font-weight: 600; transition: color 150ms ease; }
+.nav-link:hover, .footer-links a:hover { color: var(--brand); }
+.header-actions { gap: 12px; }
+
+/* Round icon buttons are shared by the header and campus story controls. */
+.theme-toggle, .menu-toggle, .round-control {
+	display: inline-grid; flex: 0 0 auto; place-items: center; width: 42px; height: 42px;
+	padding: 0; border: 1px solid var(--line); border-radius: 50%; background: transparent;
+	color: var(--ink); cursor: pointer;
+	transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease, transform 150ms ease;
+}
+.theme-toggle:hover, .menu-toggle:hover, .round-control:hover { transform: translateY(-2px); border-color: var(--brand); color: var(--brand); }
+
+.header-apply, .button {
+	display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px;
+	padding: 0 20px; border: 1px solid transparent; border-radius: 3px; font-size: 13px;
+	font-weight: 700; line-height: 1.2;
+	transition: transform 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+.header-apply { min-height: 42px; background: var(--brand); color: #fff; }
+.header-apply:hover, .button:hover { transform: translateY(-2px); }
+.header-apply:hover { background: var(--brand-deep); }
+.menu-toggle { border: 0; background: var(--surface-alt); }
+
+/* The expanded menu sits directly below the sticky header. */
+.menu-panel { position: fixed; z-index: 39; top: 78px; right: 0; left: 0; max-height: calc(100svh - 78px); overflow-y: auto; border-bottom: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow); }
+.menu-panel-inner { padding-top: 44px; padding-bottom: 38px; }
+.menu-eyebrow, .eyebrow { display: flex; align-items: center; gap: 9px; margin: 0; color: var(--brand); font-size: 10px; font-weight: 700; line-height: 1.3; }
+.menu-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 46px; margin-top: 18px; }
+.menu-link { display: grid; grid-template-columns: 42px 1fr 22px; align-items: center; min-height: 66px; border-bottom: 1px solid var(--line); font-family: "Fraunces", Georgia, serif; font-size: 24px; transition: color 150ms ease; }
+.menu-link:hover { color: var(--brand); }
+.menu-index { color: var(--muted); font-family: "DM Sans", sans-serif; font-size: 10px; }
+.menu-note { display: flex; justify-content: space-between; gap: 18px; padding-top: 24px; color: var(--muted); font-size: 13px; }
+.menu-note a { color: var(--ink); font-weight: 700; }
+
+/* Desktop footer links and the mobile contact bar. */
+.site-footer { background: var(--night); color: #fff; }
+.footer-main { display: grid; grid-template-columns: 1.1fr 1.2fr 1fr auto; align-items: start; gap: 36px; padding-top: 49px; padding-bottom: 42px; }
+.footer-wordmark .wordmark-subtitle { color: #d2dfd6; }
+.footer-line { color: #f2d37d; font-family: "Fraunces", Georgia, serif; font-size: 22px; line-height: 1.2; }
+.footer-links { display: grid; gap: 9px; color: #c2d0c7; font-size: 11px; }
+.footer-top { display: inline-flex; align-items: center; gap: 7px; color: #fff; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 18px; padding-top: 15px; padding-bottom: 17px; border-top: 1px solid rgba(255, 255, 255, 0.2); color: #aebdb3; font-size: 9px; }
+.mobile-contact-bar { display: none; }

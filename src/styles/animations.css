@@ -1,0 +1,20 @@
+/* Scroll progress, cursor, and image animation styles. */
+
+/* This bar fills from left to right as the visitor reads the page. */
+.reading-progress { position: fixed; z-index: 100; top: 0; right: 0; left: 0; height: 4px; background: var(--sun); transform-origin: left center; pointer-events: none; }
+
+/* The cursor follower is enabled for fine mouse pointers only. */
+.cursor-follower { position: fixed; z-index: 120; top: 0; left: 0; display: grid; place-items: center; width: 34px; height: 34px; margin: -17px 0 0 -17px; border: 1px solid var(--sun); border-radius: 50%; background: rgba(240, 201, 79, 0.12); pointer-events: none; mix-blend-mode: difference; }
+.cursor-follower span { width: 5px; height: 5px; border-radius: 50%; background: #fff; }
+
+body.has-custom-cursor,
+body.has-custom-cursor a,
+body.has-custom-cursor button,
+body.has-custom-cursor input,
+body.has-custom-cursor select { cursor: none; }
+
+/* A short fade and zoom marks a change to the selected campus story. */
+@keyframes image-arrive {
+	from { opacity: 0.45; transform: scale(1.02); }
+	to { opacity: 1; transform: scale(1); }
+}

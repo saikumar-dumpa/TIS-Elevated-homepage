@@ -1,0 +1,101 @@
+/* Styles for the homepage content sections. */
+
+/* Full-width welcome image and its main call to action. */
+.hero-section { position: relative; display: flex; min-height: 570px; height: min(740px, calc(100svh - 132px)); align-items: center; overflow: hidden; background: #263d32; color: #fff; }
+.hero-image, .hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-image { object-fit: cover; object-position: center 52%; }
+.hero-shade { background: rgba(9, 23, 17, 0.58); }
+.hero-content { position: relative; z-index: 1; padding-top: 32px; padding-bottom: 38px; }
+.hero-eyebrow { color: #d5e8d9; }
+.hero-eyebrow svg { color: var(--sun); }
+.hero-eyebrow > span { width: 24px; height: 1px; margin: 0 2px; background: rgba(255, 255, 255, 0.55); }
+.hero-section h1 { max-width: 950px; margin: 24px 0 0; color: #fff; font-family: "Fraunces", Georgia, serif; font-size: 76px; font-weight: 500; line-height: 0.98; }
+.hero-period { color: var(--sun); }
+.hero-statement { margin-top: 19px; font-family: "Fraunces", Georgia, serif; font-size: 38px; line-height: 1.17; }
+.hero-statement em, .story-copy h2 em, .section-heading h2 em, .admissions-copy h2 em { color: var(--sun); font-weight: 500; }
+.hero-copy { max-width: 520px; margin-top: 14px; color: rgba(255, 255, 255, 0.84); font-size: 16px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 26px; margin-top: 27px; }
+.button-light { background: #fff; color: #172821; }
+.button-light:hover { background: var(--sun); }
+.hero-text-link, .text-link { display: inline-flex; align-items: center; gap: 9px; font-size: 13px; font-weight: 700; }
+.hero-text-link { color: #fff; }
+.hero-text-link:hover, .text-link:hover { color: var(--sun); }
+.hero-footnote { display: flex; align-items: center; gap: 12px; margin-top: 47px; color: rgba(255, 255, 255, 0.8); font-size: 9px; font-weight: 700; }
+.hero-line { width: 43px; height: 1px; background: var(--sun); }
+.hero-scroll { position: absolute; right: max(28px, calc((100vw - 1312px) / 2)); bottom: 24px; display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid rgba(255, 255, 255, 0.56); border-radius: 50%; color: #fff; }
+
+/* Four quick facts make school highlights easy to scan. */
+.fact-strip { border-bottom: 1px solid var(--line); background: var(--surface); }
+.fact-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); padding-top: 29px; padding-bottom: 29px; }
+.fact-item { min-height: 54px; padding-left: 26px; border-left: 1px solid var(--line); }
+.fact-item:first-child { padding-left: 0; border-left: 0; }
+.fact-value { color: var(--brand); font-family: "Fraunces", Georgia, serif; font-size: 27px; line-height: 1.1; }
+.fact-label { margin-top: 4px; color: var(--muted); font-size: 11px; }
+
+/* About section introduces the school and its campus. */
+.story-section { background: var(--paper); }
+.story-grid { grid-template-columns: 0.88fr 1.12fr; align-items: center; gap: 94px; }
+.eyebrow-mark { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--teal); }
+.story-copy h2, .section-heading h2, .campus-topline h2, .admissions-copy h2 { margin: 22px 0 0; color: var(--ink); font-family: "Fraunces", Georgia, serif; font-size: 55px; font-weight: 500; line-height: 1.04; }
+.story-copy h2 em, .section-heading h2 em { color: var(--brand); }
+.body-copy { color: var(--muted); font-size: 15px; line-height: 1.8; }
+.story-copy .body-copy { max-width: 440px; margin-top: 23px; }
+.text-link { margin-top: 25px; color: var(--brand); }
+.text-link:hover { color: var(--brand-deep); }
+.story-visual { position: relative; min-width: 0; padding: 0 20px 24px 0; }
+.story-visual > img { width: 100%; height: 480px; object-fit: cover; }
+.story-visual::after { position: absolute; z-index: -1; right: 0; bottom: 0; width: 73%; height: 70%; background: var(--teal); content: ""; }
+.story-caption { display: flex; justify-content: space-between; gap: 12px; margin-top: 11px; color: var(--muted); font-size: 9px; font-weight: 700; }
+.story-stamp { position: absolute; right: 0; bottom: 68px; display: grid; place-content: center; gap: 7px; width: 108px; height: 108px; background: var(--sun); color: #172821; text-align: center; }
+.story-stamp span { font-size: 8px; font-weight: 700; line-height: 1.35; }
+
+/* Learning cards show the main ways students can grow. */
+.learning-section { background: var(--surface-alt); }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; }
+.section-heading h2 { max-width: 650px; }
+.section-heading > .body-copy { max-width: 310px; padding-bottom: 5px; }
+.pillar-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 50px; }
+.pillar-card { min-width: 0; }
+.pillar-image-wrap { position: relative; overflow: hidden; aspect-ratio: 1.22; background: #dce5dc; }
+.pillar-image-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 450ms ease; }
+.pillar-card:hover .pillar-image-wrap img { transform: scale(1.035); }
+.pillar-number { position: absolute; top: 13px; left: 13px; display: grid; place-items: center; width: 36px; height: 36px; background: var(--sun); color: #172821; font-size: 10px; font-weight: 700; }
+.pillar-copy { padding-top: 20px; }
+.pillar-copy .eyebrow { font-size: 9px; }
+.pillar-copy h3 { margin: 10px 0 8px; color: var(--ink); font-family: "Fraunces", Georgia, serif; font-size: 25px; font-weight: 500; line-height: 1.18; }
+.pillar-copy > p:last-child { max-width: 360px; color: var(--muted); font-size: 13px; line-height: 1.75; }
+
+/* Campus story controls let visitors browse school life. */
+.campus-section { background: var(--night); color: var(--night-text); }
+.campus-topline { display: flex; align-items: end; justify-content: space-between; gap: 32px; }
+.campus-section .eyebrow { color: var(--teal); }
+.campus-topline h2 { margin-top: 16px; color: var(--night-text); }
+.campus-controls { display: flex; align-items: center; gap: 13px; padding-bottom: 4px; }
+.round-control { width: 44px; height: 44px; border-color: rgba(255, 255, 255, 0.28); color: #fff; }
+.round-control:hover { border-color: var(--sun); color: var(--sun); }
+.story-count { color: #fff; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.story-count span { padding: 0 4px; color: var(--teal); }
+.campus-feature { display: grid; grid-template-columns: 1.25fr 0.75fr; align-items: center; gap: 72px; margin-top: 45px; }
+.campus-image-wrap { position: relative; min-width: 0; overflow: hidden; aspect-ratio: 1.55; background: #263d32; }
+.campus-image { width: 100%; height: 100%; object-fit: cover; animation: image-arrive 360ms ease both; }
+.campus-image-tag { position: absolute; right: 14px; bottom: 14px; display: inline-flex; align-items: center; gap: 8px; max-width: calc(100% - 28px); padding: 10px 13px; background: var(--sun); color: #172821; font-size: 10px; font-weight: 700; }
+.campus-story-copy { position: relative; min-height: 330px; padding: 20px 0 85px; }
+.campus-story-copy h3 { max-width: 420px; margin: 22px 0 14px; color: #fff; font-family: "Fraunces", Georgia, serif; font-size: 43px; font-weight: 500; line-height: 1.08; }
+.campus-story-copy > p:not(.eyebrow) { max-width: 370px; color: #c2d0c7; font-size: 14px; line-height: 1.8; }
+.campus-story-copy .text-link { color: var(--sun); }
+.campus-symbol { position: absolute; right: 0; bottom: 0; display: flex; align-items: center; gap: 12px; color: var(--teal); }
+.campus-symbol span { color: #d2dfd6; font-size: 8px; font-weight: 700; line-height: 1.4; }
+
+/* Admissions details pair with the enquiry form. */
+.admissions-section { background: var(--brand-deep); color: #fff; }
+.admissions-grid { grid-template-columns: 0.9fr 1.1fr; align-items: start; gap: 90px; }
+.admissions-copy { padding-top: 22px; }
+.admissions-copy .eyebrow { color: #f2d37d; }
+.admissions-copy .eyebrow-mark { background: #f2d37d; }
+.admissions-copy h2 { margin-top: 24px; color: #fff; font-size: 54px; }
+.admissions-copy h2 em { color: #f2d37d; }
+.admissions-copy > p:not(.eyebrow) { max-width: 410px; margin-top: 19px; color: rgba(255, 255, 255, 0.79); font-size: 15px; line-height: 1.8; }
+.contact-details { display: grid; gap: 12px; margin-top: 28px; }
+.contact-detail, .admissions-direct { display: inline-flex; align-items: center; gap: 10px; width: fit-content; color: #fff; font-size: 13px; }
+.contact-detail svg { color: #f2d37d; }
+.admissions-direct { margin-top: 25px; padding-bottom: 5px; border-bottom: 1px solid rgba(255, 255, 255, 0.5); font-weight: 700; }

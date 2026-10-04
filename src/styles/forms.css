@@ -1,0 +1,18 @@
+/* Admissions enquiry form and contact field styles. */
+
+/* The form panel uses the shared surface and theme colors. */
+.enquiry-panel { padding: 32px; background: var(--surface); color: var(--ink); }
+.enquiry-heading { display: flex; align-items: start; justify-content: space-between; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.enquiry-heading h3 { margin: 8px 0 0; font-family: "Fraunces", Georgia, serif; font-size: 29px; font-weight: 500; line-height: 1.15; }
+.enquiry-heading > svg { color: var(--brand); }
+.enquiry-form { display: grid; gap: 15px; padding-top: 20px; }
+.enquiry-form label { display: grid; min-width: 0; gap: 6px; }
+.enquiry-form label > span { color: var(--ink); font-size: 11px; font-weight: 700; }
+.enquiry-form label em { margin-left: 4px; color: var(--muted); font-size: 10px; font-style: normal; font-weight: 400; }
+.enquiry-form input, .enquiry-form select { width: 100%; height: 44px; min-width: 0; padding: 0 12px; border: 1px solid var(--line); border-radius: 2px; background: var(--paper); color: var(--ink); font-size: 13px; }
+.enquiry-form input::placeholder { color: #89958d; }
+.phone-fields { display: grid; grid-template-columns: 88px 1fr; gap: 12px; }
+.form-submit { width: 100%; margin-top: 3px; background: var(--brand); color: #fff; cursor: pointer; }
+.form-submit:hover { background: var(--brand-deep); color: #fff; }
+.form-note { min-height: 20px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.admissions-phone { display: inline-flex; align-items: center; gap: 6px; color: var(--brand); font-size: 11px; font-weight: 700; }

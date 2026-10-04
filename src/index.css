@@ -1,0 +1,8 @@
+/* Load shared defaults first, then page styles, then responsive overrides. */
+@import "tailwindcss";
+@import "./styles/global.css";
+@import "./styles/layout.css";
+@import "./styles/sections.css";
+@import "./styles/forms.css";
+@import "./styles/animations.css";
+@import "./styles/responsive.css";

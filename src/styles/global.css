@@ -1,0 +1,108 @@
+/* Shared colors, fonts, and default text settings for the whole site. */
+:root {
+  font-family: "DM Sans", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+  --paper: #f5f7f3;
+  --surface: #ffffff;
+  --surface-alt: #e9efea;
+  --ink: #172821;
+  --muted: #58665e;
+  --line: #d8e0d9;
+  --brand: #a90f31;
+  --brand-deep: #761329;
+  --teal: #45b8a7;
+  --sun: #f0c94f;
+  --night: #152821;
+  --night-text: #f6f7f2;
+  --shadow: 0 22px 60px rgba(20, 38, 30, 0.14);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #111d18;
+  --surface: #192820;
+  --surface-alt: #22372d;
+  --ink: #f0f4ee;
+  --muted: #b6c2b9;
+  --line: #34463b;
+  --brand: #d44763;
+  --brand-deep: #a32845;
+  --teal: #71d0c0;
+  --sun: #f5d66f;
+  --night: #0a1510;
+  --night-text: #f6f7f2;
+  --shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+}
+
+/* Use predictable sizing and accessible focus indicators everywhere. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.55;
+  transition: background-color 220ms ease, color 220ms ease;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100svh;
+  overflow: clip;
+}
+
+/* Center page content and keep a consistent width on large screens. */
+.shell {
+  max-width: 1440px;
+  padding-right: 64px;
+  padding-left: 64px;
+}
+
+.section-pad {
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
