@@ -1,10 +1,13 @@
-# Tulas International School (TIS) - Homepage Redesign
+# 🎓 Tulas International School (TIS) - Homepage Redesign
 
-A modern, animated redesign of the Tulas International School homepage focused on high conversion, smoother storytelling, and strong mobile responsiveness for prospective families.
+A modern, responsive, and conversion-focused redesign of the Tulas International School homepage. The project emphasizes engaging storytelling, smooth user experience, mobile responsiveness, and a streamlined admissions journey for prospective students and parents.
+
+---
 
 ## 🚀 Live Demo
-- **Live URL:** [Insert Vercel / Netlify link here]
-- **Repository:** [Insert GitHub repository link here]
+- **Live URL:** https://tis-elevated-homepage.vercel.app/
+- **Repository:** https://github.com/saikumar-dumpa/TIS-Elevated-homepage
+
 
 ## 🛠️ Tech Stack
 - **Framework:** React 19
@@ -25,8 +28,8 @@ A modern, animated redesign of the Tulas International School homepage focused o
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/tis-homepage-redesign.git
-   cd tis-homepage-redesign
+   git clone https://github.com/saikumar-dumpa/TIS-Elevated-homepage.git
+   cd TIS-Elevated-homepage
    ```
 
 2. **Install dependencies:**
@@ -81,3 +84,25 @@ src/
 └── README.md               # Project documentation
 
 ```
+
+## ✅ Project Benefits
+
+- Easy to use for students and parents
+- Works well on mobile, tablet, and desktop
+- Clean and modern design
+- Fast and smooth user experience
+- Better navigation and accessibility
+- Improves the school's online presence
+
+## 🎯 Conclusion
+
+- This redesign makes the school website more attractive and user-friendly
+- Helps visitors find information quickly
+- Creates a positive first impression of the school
+- Fully responsive and ready for production
+
+
+---
+**Developed by Saikumar Dumpa**
+🔗 Live: https://tis-elevated-homepage.vercel.app/
+🔗 GitHub: https://github.com/saikumar-dumpa/TIS-Elevated-homepage
